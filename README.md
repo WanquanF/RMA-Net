@@ -14,6 +14,22 @@ The code has been tested with Python3.8, PyTorch 1.6 and Cuda 10.2:
     conda install pytorch=1.6.0 torchvision=0.7.0 cudatoolkit=10.2 -c pytorch
     conda install -c conda-forge igl
 
+## Usage
+
+### Pre-trained Models
+Download the [pre-trained models](https://none) and put them in the *[YourProjectPath]/pre_trained* folder. 
+
+### Datasets
+Download the [datasets](https://none) and put them in the *[YourProjectPath]/data* folder.
+
+### Test on the datasets
+To test on our constructed datasets, run:
+
+### How to train on your own dataset
+To construct your own dataset, please pack your data into the same format as ours and train with our training script. An example is given here:
+
+
+
 ## Citation
 Please cite this paper with the following bibtex:
 
