@@ -6,7 +6,7 @@ Paper address: [https://arxiv.org/abs/2011.12104](https://arxiv.org/abs/2011.121
 
 Project webpage: [https://wanquanf.github.io/RMA-Net.html](https://wanquanf.github.io/RMA-Net.html)
 
-![avatar](./teaser_version3_low.png)
+![avatar](./images/teaser_version3_low.png)
 
 ## Prerequisite Installation
 The code has been tested with Python3.8, PyTorch 1.6 and Cuda 10.2:
