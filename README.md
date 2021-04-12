@@ -1,6 +1,6 @@
 # RMA-Net
 
-This repo is the implementation of the paper: Recurrent Multi-view Alignment Network for Unsupervised Surface Registration (CVPR 2021). Some files and source code are not uploaded yet, but they will be released very soon.
+This repo is the implementation of the paper: Recurrent Multi-view Alignment Network for Unsupervised Surface Registration (CVPR 2021). 
 
 Paper address: [https://arxiv.org/abs/2011.12104](https://arxiv.org/abs/2011.12104)
 
