@@ -16,6 +16,10 @@ The code has been tested with Python3.8, PyTorch 1.6 and Cuda 10.2:
     conda install pytorch=1.6.0 torchvision=0.7.0 cudatoolkit=10.2 -c pytorch
     conda install -c conda-forge igl
 
+Build the cuda extension:
+
+    python build_cuda.py
+
 ## Usage
 
 ### Pre-trained Models
@@ -24,11 +28,11 @@ Download the [pre-trained models](https://none) and put them in the *[YourProjec
 ### Run the registration
 To run registration for a single sample, you can run:
 
-    code for registration a single sample
+    python inference.py --weight [pretrained-weight-path] --src [source-obj-path] --tgt [target-obj-path] --iteration [iteration-number] --device_id [gpu-id] --if_nonrigid [1 or 0]
 
-The results are listed in the folder named *XXX_results*, including the deforming results of different stages. We have given a collection of samples in *[YourProjectPath]/samples*, and you can run the registration for them by:
+The last argument *--if_nonrigid* represents if the translation between the source and target is non-rigid (1) or rigid (0). Registration results are listed in the folder named *source_deform_results*, including the deforming results of different stages. We have given a collection of samples in *[YourProjectPath]/samples*, and you can run the registration for them by:
     
-    code for registration a collection of samples
+    sh inference_samples.sh
 
 
 ### Datasets
