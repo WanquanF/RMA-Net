@@ -1,6 +1,6 @@
 # RMA-Net
 
-This repo is the code of the paper: Recurrent Multi-view Alignment Network for Unsupervised Surface Registration (CVPR 2021).
+This repo is the code of the paper: Recurrent Multi-view Alignment Network for Unsupervised Surface Registration (CVPR 2021). Some download links and source code files are not uploaded yet, but they will be released very soon.
 
 Paper address: [https://arxiv.org/abs/2011.12104](https://arxiv.org/abs/2011.12104)
 
@@ -24,10 +24,9 @@ To run registration for a single sample, you can run:
 
     code for registration a single sample
 
-The results are listed in the folder named *XXX_results*, including the deforming results of different stages. We have given a collection of toy samples in *[YourProjectPath]/toys*, and you can run the registration for them by:
+The results are listed in the folder named *XXX_results*, including the deforming results of different stages. We have given a collection of samples in *[YourProjectPath]/samples*, and you can run the registration for them by:
     
-    code for registration a collection of toy
-
+    code for registration a collection of samples
 
 
 ### Datasets
@@ -36,12 +35,16 @@ in the *[YourProjectPath]/toy_dataset* folder and give a script to pack them int
 
     code for constructing a dataset
 
-The dataset we used in the paper can be downloaded [here](https://none).
-
-    
+Or you can also download the dataset we used in the paper [here](https://none).
 
 ### Train & Test
+To test on the whole testing set, run:
 
+    code for testing on the whole dataset
+
+To train the network, run:
+
+    code for training the network
 
 
 
