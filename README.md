@@ -23,7 +23,7 @@ Build the cuda extension:
 ## Usage
 
 ### Pre-trained Models
-Download the [pre-trained models](https://none) and put them in the *[YourProjectPath]/pre_trained* folder. 
+Download the [pre-trained models](https://wanquanf.github.io/rmanet_pretrained.html) and put the models in the *[YourProjectPath]/pre_trained* folder. 
 
 ### Run the registration
 To run registration for a single sample, you can run:
