@@ -19,14 +19,30 @@ The code has been tested with Python3.8, PyTorch 1.6 and Cuda 10.2:
 ### Pre-trained Models
 Download the [pre-trained models](https://none) and put them in the *[YourProjectPath]/pre_trained* folder. 
 
+### Run the registration
+To run registration for a single sample, you can run:
+
+    code for registration a single sample
+
+The results are listed in the folder named *XXX_results*, including the deforming results of different stages. We have given a collection of toy samples in *[YourProjectPath]/toys*, and you can run the registration for them by:
+    
+    code for registration a collection of toy
+
+
+
 ### Datasets
-Download the [datasets](https://none) and put them in the *[YourProjectPath]/data* folder.
+To show how to construct a dataset that can be used in the code, we list some toy pairs
+in the *[YourProjectPath]/toy_dataset* folder and give a script to pack them into a bin file:
 
-### Test on the datasets
-To test on our constructed datasets, run:
+    code for constructing a dataset
 
-### How to train on your own dataset
-To construct your own dataset, please pack your data into the same format as ours and train with our training script. An example is given here:
+The dataset we used in the paper can be downloaded [here](https://none).
+
+    
+
+### Train & Test
+
+
 
 
 
