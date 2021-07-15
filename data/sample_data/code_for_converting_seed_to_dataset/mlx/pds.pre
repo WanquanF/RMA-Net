@@ -1,0 +1,4 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Poisson-disk Sampling">
+  <Param name="SampleNum" tooltip="The desired number of samples. The ray of the disk is calculated according to the sampling density." value="

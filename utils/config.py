@@ -63,29 +63,19 @@ def parse_args():
     
 
     # parameters for grid searching
-    parser.add_argument('--weight_wsmo',
-                        default=-1, type=float)
     parser.add_argument('--weight_cd',
                         default=1, type=float)
     parser.add_argument('--weight_pd',
                         default=-1, type=float)
-    parser.add_argument('--weight_pcp',
+    parser.add_argument('--weight_sparse',
                         default=-1, type=float)
-    parser.add_argument('--weight_nc',
+    parser.add_argument('--weight_depth',
                         default=-1, type=float)
-    parser.add_argument('--weight_seg',
-                        default=-1, type=float)
-    parser.add_argument('--weight_wact',
-                        default=-1, type=float)
-    parser.add_argument('--weight_lfd',
-                        default=-1, type=float)
-    parser.add_argument('--weight_dice',
-                        default=-1, type=float)
-    parser.add_argument('--weight_trans',
+    parser.add_argument('--weight_tran',
                         default=-1, type=float)
     parser.add_argument('--weight_mask',
                         default=-1, type=float)
-    parser.add_argument('--weight_nn',
+    parser.add_argument('--weight_arap',
                         default=-1, type=float)
     parser.add_argument('--weight_rtmat',
                         default=-1, type=float)
@@ -119,6 +109,14 @@ def parse_args():
                         metavar='pn', help='number of patches')
     parser.add_argument('--pack_path', type=str, default='None', metavar='None',
                     help='the path of packed_data (default: None)')
+    parser.add_argument('--pre_trained', type=str, default='None', metavar='None',
+                    help='the path of pretrained model weights (default: None)')
+                    
+    parser.add_argument('--train_bin_path', type=str, default='None', metavar='None',
+                    help='the path of training_bin_file (default: None)')
+    parser.add_argument('--test_bin_path', type=str, default='None', metavar='None',
+                    help='the path of testing_bin_file (default: None)')
+                    
     parser.add_argument('--dim_k', default=1024, type=int,
                         metavar='K', help='dim. of the feature vector (default: 1024)')
     parser.add_argument('--symfn', default='max', choices=['max', 'avg'],
