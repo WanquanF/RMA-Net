@@ -50,7 +50,7 @@ Then, download some [seed data](https://wanquanf.github.io/seed_data.html) into 
     cd [YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset
     python convert_seed_to_dataset.py
 
-For simplicity, you can also directly download the constructed [toy dataset](https://wanquanf.github.io/toy_dataset.html) into *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/packed_data*.
+For simplicity, you can also directly download the constructed [packed dataset](https://wanquanf.github.io/packed_dataset.html) into *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/packed_data*.
 
 
 ### Train with the dataset
