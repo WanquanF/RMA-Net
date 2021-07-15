@@ -51,7 +51,12 @@ For simplicity, you can also directly download the constructed [toy dataset](htt
 
 
 ### Train with the dataset
+To train with the constructed dataset:
 
+    cd *[YourProjectPath]/model
+    python train_sample.py
+
+The settings (the weights of the loss terms, the dataset, etc) of the training process can also be adjusted in the *train_sample.py*. The training results are saved in cd *[YourProjectPath]/model/results.
 
 
 

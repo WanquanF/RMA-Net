@@ -13,7 +13,7 @@ loss_weight+=' --gamma 1.0'
 
 
 os.system('CUDA_VISIBLE_DEVICES=3 python train_view.py '+
-          ' --pre_trained \'../data/sample_data/seed/sample_600000.pt\' '+
+          ' --pre_trained \'../pre_trained/deform.pt\' '+
           ' --visualization_while_testing 1 '+
           ' --last_sample_id 0 '+
           ' --iteration 7 '+
