@@ -36,21 +36,21 @@ The last argument *--if_nonrigid* represents if the translation between the sour
 
 
 ### Datasets
-To show how to construct a dataset that can be used in the code, we list some toy pairs
-in the *[YourProjectPath]/toy_dataset* folder and give a script to pack them into a bin file:
+To show how to construct a dataset that can be used in the code, we give a sample script that constructs a toy dataset that can construct the packed dataset.
+Firstly, build the code for ACAP interpolation (you should change the include/lib path in the *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/vertex2acap/CMakelists.txt*):
 
-    code for constructing a dataset
+    cd *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/vertex2acap
+    python build_acap.py
 
-Or you can also download the dataset we used in the paper [here](https://wanquanf.github.io/rmanet_datasets.html).
+Then, download some [seed data](https://wanquanf.github.io/seed_data.html) into the *[YourProjectPath]/data/sample_data/seed* folder, and then convert the seed data into a packed dataset (you should change the *meshlabserver* path in *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/sample_points_for_one_mesh.py*):
 
-### Train & Test
-To test on the whole testing set, run:
+    cd *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset
+    python convert_seed_to_dataset.py
 
-    code for testing on the whole dataset
+For simplicity, you can also directly download the constructed [toy dataset](https://wanquanf.github.io/toy_dataset.html) into *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/packed_data*.
 
-To train the network, run:
 
-    code for training the network
+### Train with the dataset
 
 
 
