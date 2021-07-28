@@ -41,7 +41,7 @@ The last argument *--if_nonrigid* represents if the translation between the sour
 ### Datasets
 The dataset used in our paper can be downloaded [here](https://wanquanf.github.io/rmanet_datasets.html).
 
-To show how to construct a dataset that can be used in the code, we give a sample script that constructs a toy dataset that can construct the packed dataset.
+Or you can also construct your the dataset that can be used in the code. To show how to construct a dataset that can be used in the code, we give a sample script that constructs a toy dataset that can construct the packed dataset.
 Firstly, build the code for ACAP interpolation (you should change the include/lib path in the *[YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/vertex2acap/CMakelists.txt*):
 
     cd [YourProjectPath]/data/sample_data/code_for_converting_seed_to_dataset/vertex2acap
